@@ -1,0 +1,24 @@
+.timer {
+    display: flex;
+}
+.field {
+    width: 50px;
+    text-align: center;
+    position: relative;
+}
+.field:not(:last-child) {
+    margin-right: 25px;
+}
+
+.field:not(:last-child) .value::after{
+    content: ':';
+    position: absolute;
+    margin-left: 10px;
+    width: 20px
+}
+.value{
+    display: block;
+    font-family: 'Turret Road', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
